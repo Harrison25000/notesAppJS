@@ -14,24 +14,11 @@
 
 
 (function(exports) {
-  function testNoteListViewHasList() {
-    var noteListView = new NoteListView();
-
-    if (noteListView.notelist instanceof NoteList) {
-      console.log("testNoteListViewHasList: Yep, contains an instance!");
-    }
-    else {
-      throw new Error("testNoteListViewHasList Error: Doesn't have an instance of object")
-    }
-  };
-  testNoteListViewHasList();
-})(this);
-
-
-(function(exports) {
   function testStringHtml() {
-    var noteListView = new NoteListView();
-    noteListView.notelist.create('text')
+    var bob = { text: "bob"}
+    var noteListDummy = { notesArray: [bob] }
+    var noteListView = new NoteListView(noteListDummy);
+    //noteListView.notelist.create('text')
     noteListView.html()
     if (noteListView.htmlArray.includes("<ul><li><div>bob</div></li><li><div>text</div></li></ul>")) {
       console.log("testStringHtml: Yep, contains a string of HTML!");

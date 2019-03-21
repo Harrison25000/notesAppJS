@@ -15,6 +15,7 @@
 (function(exports) {
   function testNoteListIsInstantiatedWithArray() {
     var noteList = new NoteList();
+    noteList.create("bob")
 
     if (noteList.notesArray[0] !== 'bob') {
       console.log(noteList.notesArray)
