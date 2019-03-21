@@ -20,7 +20,7 @@
     var noteListView = new NoteListView(noteListDummy);
     //noteListView.notelist.create('text')
     noteListView.html()
-    if (noteListView.htmlArray.includes("<ul><li><div>bob</div></li><li><div>text</div></li></ul>")) {
+    if (noteListView.htmlArray.includes("<ul><li><div>bob</div></li></ul>")) {
       console.log("testStringHtml: Yep, contains a string of HTML!");
     }
     else {

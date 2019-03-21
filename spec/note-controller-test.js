@@ -1,8 +1,9 @@
 (function(exports) {
   function testControllerCanBeInstatiated() {
-    var controller = new NoteController();
-
-    if (controller instanceof NoteController){
+    console.log("You should see me");
+    let control = new NoteController();
+    console.log("Me too");
+    if (control instanceof NoteController){
       console.log(`${controller} is an instance of your Note Controller`)
     }
     else {
@@ -10,5 +11,5 @@
       throw new Error("Error: not an instance of NoteController");
     }
   };
-  testControllerCanBeInstatiated();
+  testControllerCanBeInstatiated()
 })(this);
