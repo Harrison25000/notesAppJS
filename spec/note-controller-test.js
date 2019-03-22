@@ -4,6 +4,7 @@
     var control = new NoteController();
     console.log("Me too");
     if (control instanceof NoteController){
+      console.log(control)
       console.log(`${control} is an instance of your Note Controller`)
     }
     else {
